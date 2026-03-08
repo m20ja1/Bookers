@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
-  get 'bookers' =>
   root to: 'homes#top'
-  get 'bookers' => 'homes#top'
+  get 'bookers' => 'books#index'
+
   resources :books
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 
