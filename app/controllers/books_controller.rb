@@ -29,15 +29,14 @@ class BooksController < ApplicationController
     if @book.update(book_params)
       redirect_to book_path(@book.id), notice: "Book was successfully updated."
     else
-      render :edit
+      render :edit, status: :unprocessable_entity
     end
   end
 
   def destroy
     book = Book.find(params[:id])
-    if book.destroy
-      
-    redirect_to books_path
+    book.destroy
+    redirect_to books_path, notice: "Book was successfully destroyed."
   end
 
 private
