@@ -1,13 +1,13 @@
 Rails.application.routes.draw do
-<<<<<<< HEAD
+
   root to: 'homes#top'
   get 'bookers' => 'books#index'
 
   resources :books
-=======
+
   resources :books
   get "homes/top"
->>>>>>> 580a9583527924f19f88652d4484e67d378137ff
+
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 
   # Reveal health status on /up that returns 200 if the app boots with no exceptions, otherwise 500.
