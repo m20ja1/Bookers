@@ -9,18 +9,54 @@
  * Consider organizing styles into separate files for maintainability.
  */
 
- * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+body {
+  background-color: #fff;
+  color: #333;
+  font-family: verdana, Arial, Helvetica, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+  margin: 33px;
+
 }
 
-
-p {
+p, ol, ul, td {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 13px;
+  line-height: 18px;
+  margin: 33px;
 }
 
-h1 {
-  margin: 17.42px 0;
+#リンク
+a {
+  color:#666;
 }
+
+a:visited {
+  color: #666
+}
+
+a:hover {
+  color:#fff;
+  background-color: #000;
+}
+
+td{
+  padding-bottom:7px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+th{
+  padding-bottom: 5px;
+}
+
+label {
+  display: block;
+}
+
+div.field, div.actions {
+    margin-bottom: 10px;
+}
+
+
+

@@ -37,11 +37,13 @@
   </ul>
 <% end %> 
 
-<%= form_with model:@book do |f| %>
-  <p>Title</p>
-  <%= f.text_field :title %>
-  <p>Body</p>
-  <%= f.text_area :body %>
 
-  <%= f.submit 'Create Book' %>
+<%= form_with model:@book do |f| %>
+  <div class="field"><div>Title</div>
+  <%= f.text_field :title %></div>
+  
+  <div class="field"><div>Body</div>
+  <%= f.text_area :body %></div>
+
+  <div class="actions"><%= f.submit 'Create Book' %></div>
 <% end %>
