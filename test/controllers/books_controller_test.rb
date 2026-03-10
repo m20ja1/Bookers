@@ -15,4 +15,12 @@ class BooksControllerTest < ActionDispatch::IntegrationTest
     get books_edit_url
     assert_response :success
   end
+<<<<<<< HEAD
+=======
+
+  test "should get new" do
+    get books_new_url
+    assert_response :success
+  end
+>>>>>>> 580a9583527924f19f88652d4484e67d378137ff
 end
